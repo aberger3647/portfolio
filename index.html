@@ -1,150 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Alex Berger Portfolio</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
-      <div class="row" id="intro">
-        <div class="d-flex flex-column">
-          <a href="#projects">Projects</a>
-          <a href="#tech">Tech Stack</a>
-          <a href="#exp">Experience</a>
-          <a href="#about">About</a>
-        </div>
-        <div class="name d-flex align-items-end">
-          <h1>Alex Berger</h1>
-        </div>
-      </div>
+    <div class="item" id="intro">
+<div class="nav">
+            <a href="#projects" class="navlink">Projects</a>
+            <a href="#tech" class="navlink">Tech Stack</a>
+            <a href="#exp" class="navlink">Experience</a>
+            <a href="#about" class="navlink">About</a>
+</div>
+        <h1 class="name">Alex Berger</h1>
+    </div>
 
 
-      <div class="row" id="projects">
-        <h2>Projects</h2><div class="float-left"><i class="fa fa-sharp fa-solid fa-chevron-up"></i></div>
+    </div>
 
 
+    <div class="item projects" id="projects">
+        <h2 class="header">
+            Projects
+        </h2>
 
-        <div class="col-md-4">
-          <h3>Plant Parenthood</h3>
-          <div class="thumb ratio ratio-16x9">
-            <img src="/img/plantparenthood.png" />
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Cinemate</h3>
-          <div class="thumb ratio ratio-16x9">
-            <img src="/img/cinemate.png" />
-          </div>
+        <div class="arrows">
+            <a href="#intro"><img src="img/chevron.svg" class="chevron" style="transform:rotate(180deg)"></a>
+            <a href="#tech"><img src="img/chevron.svg" class="chevron"></a>
         </div>
 
-        <div class="col-md-4">
-          <h3>Weather App</h3>
-          <div class="thumb ratio ratio-16x9">
-            <img src="/img/cinemate.png" />
-          </div>
+        <div class="top">
+            <a href="#top"><img src="img/chevron2.svg" class="chevron"></a>
         </div>
-      </div>
 
-
-
-          <h2 id="tech">Tech Stack</h2>
-        <div class="col d-flex align-items-center">
-
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3>Languages</h3>
-                </div>
-                <div class="col-sm-3">
-                    <h4>HTML, CSS & Javascript</h4>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3>Front End</h3>
-                </div>
-                <div class="col-sm-3">
-                    <h4>Bootstrap & Tailwind</h4>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3>Back End</h3>
-                </div>
-                <div class="col-sm-3">
-                    <h4>Node.js, Express.js, Sequelize</h4>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3>Design</h3>
-                </div>
-                <div class="col-sm-3">
-                    <h4>UI, Information Architecture, Visual Design, Animation</h4>
-                </div>
+        <div class="project">
+            <h3>Plant Parenthood</h3>
+            <div class="thumb ratio ratio-16x9">
+                <a href="https://plant-parenthood.herokuapp.com/"><img src="/img/plantparenthood.png" /></a>
             </div>
         </div>
 
-      <div class="row" id="exp">
-        <h2>Experience</h2>
-        
-        <div class="resume">
-            <h4>Motion Graphics Designer</h4>
-            <h5>Cooler Screens, Austin TX, 2022 - Present</h5>
-            <p>Designs and animates ads for cooler doors, completing many projects in a short timeline. Juggles changing priorities and urgent requests to deliver polished, eye-catching ads.</p>
+        <div class="project">
+            <h3>Cinemate</h3>
+            <div class="thumb ratio ratio-16x9">
+                <a href="https://sidgray80.github.io/cinemate/index.html"><img src="/img/cinemate.png" /></a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Weather App</h3>
+            <div class="thumb ratio ratio-16x9">
+                <a href="https://aberger3647.github.io/weather-dashboard/"><img src="/img/weather.png" /></a>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="item tech" id="tech">
+        <h2 class="header">
+            Tech Stack
+        </h2>
+<div class="arrows">
+                <a href="#projects"><img src="img/chevron.svg" class="chevron" style="transform:rotate(180deg)"></a>
+                <a href="#exp"><img src="img/chevron.svg" class="chevron"></a>
+</div>
+
+<div class="top">
+    <a href="#top"><img src="img/chevron2.svg" class="chevron"></a>
+</div>
+<div class="stack">
+    
+            <h3>Languages</h3>
+            <h4>HTML, CSS, Javascript, jQuery</h4>
+            <h3>Front End</h3>
+            <h4>Bootstrap & Tailwind</h4>
+            <h3>Back End</h3>
+            <h4>Node.js, Express.js, Sequelize</h4>
+            <h3>Design</h3>
+            <h4>UI, Information Architecture, Visual Design, Animation</h4>
+</div>
+    </div>
+
+    <div class="item exp" id="exp">
+        <h2 class="header">
+            Experience
+        </h2>
+         <div class="arrows">
+                <a href="#tech"><img src="img/chevron.svg" class="chevron" style="transform:rotate(180deg)"></a>
+                <a href="#about"><img src="img/chevron.svg" class="chevron"></a>
+         </div>
+
+         <div class="top">
+            <a href="#top"><img src="img/chevron2.svg" class="chevron"></a>
         </div>
 
 <div class="resume">
-            <h4>Freelance Motion Graphics Designer</h4>
-            <h5>Various Clients, Austin TX, 2021 - Present</h5>
-            <p>Works with art directors to create motion graphics for a variety of projects. Applies advanced techniques using JavaScript to create motion graphics templates, automate tasks and work more efficiently.</p>
+            <div>
+                <h4>Motion Graphics Designer</h4>
+                <h5>Cooler Screens, Austin TX, 2022 - Present</h5>
+                <p>Designs and animates ads for cooler doors, completing many projects in a short timeline. Juggles changing
+                    priorities and urgent requests to deliver polished, eye-catching ads.</p>
+            </div>
+    
+            <div>
+                <h4>Freelance Motion Graphics Designer</h4>
+                <h5>Various Clients, Austin TX, 2021 - Present</h5>
+                <p>Works with art directors to create motion graphics for a variety of projects. Applies advanced techniques
+                    using JavaScript to create motion graphics templates, automate tasks and work more efficiently.</p>
+            </div>
+    
+            <div>
+                <h4>Motion Graphics Designer</h4>
+                <h5>SparkCognition, Austin TX, 2017 - 2022</h5>
+                <p>Collaborated with designers, editors, and marketing to create animated videos for pitches, product demos,
+                    explainers, and social media at Artificial Intelligence company.</p>
+            </div>
+            
+            <div>
+                <h4>Social Media Manager</h4>
+                <h5>TastyPlacement, Austin TX, 2016 - 2017</h5>
+                <p>Created engaging social media posts for SEO agency clients using knowledge of current events and trends.
+                </p>
+            </div>
+    
+            <div>
+                <h4>Technician</h4>
+                <h5>Student Technology Services, St. Louis, MO 2014-16</h5>
+                <p>Works with art directors to create motion graphics for a variety of projects. Applies advanced techniques
+                    using JavaScript to create motion graphics templates, automate tasks and work more efficiently.</p>
+        </div>
+</div>
+    </div>
+    </div>
+
+    <div class="item about" id="about">
+        <h2 class="header">
+            About
+        </h2>
+ <div class="arrows">           <a href="#exp"><img src="img/chevron.svg" class="chevron" style="transform:rotate(180deg)"></a></div>
+
+ <div class="top">
+    <a href="#top"><img src="img/chevron2.svg" class="chevron"></a>
 </div>
 
-<div class="resume">
-    <h4>Motion Graphics Designer</h4>
-    <h5>SparkCognition, Austin TX, 2017 - 2022</h5>
-    <p>Collaborated with designers, editors, and marketing to create animated videos for pitches, product demos, explainers, and social media at Artificial Intelligence company.</p>
-</div>
-
-<div class="resume">
-    <h4>Social Media Manager</h4>
-    <h5>TastyPlacement, Austin TX, 2016 - 2017</h5>
-    <p>Created engaging social media posts for SEO agency clients using knowledge of current events and trends.</p>
-</div>
-
-<div class="resume">
-    <h4>Technician</h4>
-    <h5>Student Technology Services, St. Louis, MO 2014-16</h5>
-    <p>Works with art directors to create motion graphics for a variety of projects. Applies advanced techniques using JavaScript to create motion graphics templates, automate tasks and work more efficiently.</p>
-</div>
-      </div>
-
-      <div class="row" id="about">
-        <h2>About</h2>
         <div class="summary">
-            <h4>I’m a full-stack web developer with a design background. I am currently pursuing an intensive coding certificate at The University of Texas at Austin. I am genuinely excited to problem-solve with others and to learn how to write better code. I’m looking to bring my assiduous nature to an organization where I can become a valuable asset.</h4>
+            <h4>I’m a full-stack web developer with a design background. I am currently pursuing an intensive coding
+                certificate at The University of Texas at Austin. I am genuinely excited to problem-solve with others
+                and to learn how to write better code. I’m looking to bring my assiduous nature to an organization where
+                I can become a valuable asset.</h4>
         </div>
-      </div>
 
-    <!--bootstrap js-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <div class="headshot">
+            <img src="img/headshot.jpg">
+        </div>
+    </div>
+
+</body>
+
 </html>

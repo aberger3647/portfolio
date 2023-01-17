@@ -1,7 +1,15 @@
+:root {
+    font-family: sans-serif;
+}
+
+html{scroll-behavior:smooth}
+
 body {
-    justify-content: center;
-    background: linear-gradient( rgb(153, 196, 1) 70%, rgb(115, 237, 190));
-    padding: 30px;
+    background: linear-gradient( rgb(153, 196, 1), rgb(115, 237, 190));
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    padding-top: 30px;
 }
 
 h1 {
@@ -11,7 +19,7 @@ h2 {
     font-size: 4rem;
 }
 
-h3 {
+h3{
     font-size: 2rem;
     margin-top: 50px;
 }
@@ -20,22 +28,68 @@ h5 {
     font-size: 1rem;
 }
 
-#intro, #projects, #tech, #exp, #about {
-    height: 100vh;
-    padding: 15px 15px 0px 0px;
-}
-
 a {
     text-decoration: none;
     font-size: 2rem;
-}
-
-a {
-    color: black;
+    color:black;
 }
 
 a:hover {
     color: white;
+}
+
+.grid-container {
+    display: grid;
+}
+
+#intro {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    gap: 10px;
+}
+
+.navlink {
+    display: block;
+    line-height: 1.5;
+}
+
+.name {
+    align-self: end;
+}
+
+.chevron {
+    vertical-align: middle;
+    max-width: 100px;
+}
+
+.projects, .about, .tech, .exp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 4fr;
+    gap: 10px;
+}
+
+.header, .arrows, .top {
+    align-self: center;
+}
+
+.project {
+    justify-self: center;
+}
+
+.thumb:hover {
+    outline: 5px solid black;
+    outline-offset: 20px;
+    border-radius: 5px;
+}
+
+.summary, .headshot {
+    align-self: center;
+}
+
+.item {
+    padding: 0px 40px 0px 40px;
+    min-height: 100vh;
 }
 
 img {
@@ -46,4 +100,10 @@ img {
 
 .summary, .resume {
     max-width: 600px;
+}
+
+@media(max-width: 500px) {
+    body {
+        grid-template-columns: 1fr;
+    }
 }
