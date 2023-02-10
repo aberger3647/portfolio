@@ -28,7 +28,6 @@ export default function Content({ currentPage }) {
 
     return (
     <div>
-        
         {renderPage()}
     </div>
 )};
