@@ -3,7 +3,7 @@ import Project from '../Project';
 
 const Portfolio = () => {
     return (
-    <div>
+    <div className="content">
         <h1>Portfolio</h1>
         <Project imgPath='./img/plantparenthood.png' title='Plant Parenthood' github='https://github.com/aberger3647/plantparenthood' liveApp='https://plant-parenthood.herokuapp.com/' desc='Gardeners can manage their plants, their garden tasks, and record observations. Responsible for back-end code, visual design and front-end interactivity. Tools used: Express.js, Node.js, Handlebars, Day.js, Bootstrap' />
         <Project imgPath='./img/cinemate.png' title='Cinemate' github='https://github.com/sidgray80/cinemate/' liveApp='https://sidgray80.github.io/cinemate/index.html/' desc='Moviegoers can search by genre to view movie trailers and reviews via API and save favorites to a list. Responsible for front-end design and implementation. Tools used: Tailwind, YouTube API, TMDB API' />
@@ -12,5 +12,3 @@ const Portfolio = () => {
 )};
 
 export default Portfolio;
-
-// {[{imgPath: './img/cinemate.png', title: 'Cinemate'}].map((project) => <Project imgPath={project.imgPath} title={project.title} />)}

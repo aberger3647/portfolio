@@ -5,7 +5,7 @@ const Resume = () => {
     const skills = ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Tailwind', 'Node.js', 'Express.js', 'SQL', 'MySQL', 'MongoDB', 'Mongoose', 'NoSQL', 'React']
 
     return (
-    <div>
+    <div className="content">
         <h1>Resume</h1>
         {skills.map((skill) => <Skill skill={skill} />)}
     </div>
