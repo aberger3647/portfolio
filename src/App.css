@@ -2,18 +2,72 @@ h1, h2, h3, h4, p, a {
   font-family: Space Grotesk;
 }
 
-.projthumb, .headshot {
+h1, h2 {
+  text-align: center;
+  margin: 0px 15px 10px 15px; 
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 0px 15px;
+}
+
+.headshot, .skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.footer, .nav {
+  display: flex;
+  justify-content: center;
+}
+
+.projlinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+#about {
+  max-width: 400px;
+}
+
+img {
   border: 1px solid black;
   max-height: 300px;
   width: auto;
+  margin: 15px;
 }
 
-.skill {
+.projects {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.skill, .projlink {
   border: 1px solid black;
   border-radius: 50px;
   padding: 5px 10px 5px 10px;
   margin: 5px;
   display: inline-block;
+  flex-flow: row wrap;
+}
+
+.projlink {
+  text-decoration: none;
+  color: black;
+}
+
+.projlink:hover {
+  background-color: rgb(255, 230, 0);
 }
 
 .nav-link, .foot-link {
@@ -21,6 +75,13 @@ h1, h2, h3, h4, p, a {
   text-decoration: none;
   padding: 5px;
   margin: 5px;
+}
+
+.nav-link:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(255, 230, 0)
 }
 
 .foot-link:hover {
@@ -35,14 +96,14 @@ h1, h2, h3, h4, p, a {
   text-decoration-thickness: 3px;
 }
 
-.content {
+.about, .contact, .resume {
   max-width: 700px;
 }
 
 nav {
   display: inline-block;
   border-bottom: 1px solid black;
-  margin-bottom: 20px;
+  margin: 3px 0px 20px 0px;
   padding: 10px;
 }
 

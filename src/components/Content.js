@@ -27,7 +27,7 @@ export default function Content({ currentPage }) {
 
 
     return (
-    <div>
+    <div className="content">
         {renderPage()}
     </div>
 )};
