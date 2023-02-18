@@ -1,3 +1,4 @@
+/* text and image display */
 h1, h2, h3, h4, p, a {
   font-family: Space Grotesk;
 }
@@ -7,85 +8,21 @@ h1, h2 {
   margin: 0px 15px 10px 15px; 
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  margin: 0px 15px;
-}
-
-.headshot, .skills {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-}
-
-.footer, .nav {
-  display: flex;
-  justify-content: center;
-}
-
-.projlinks {
-  display: flex;
-  justify-content: space-around;
-}
-
-#about {
-  max-width: 375px;
-  text-align: justify;
-}
-
 p {
   margin:15px;
 }
 
 img {
   border: 1px solid black;
-  max-height: 300px;
-  width: auto;
   margin: 15px;
 }
 
-.projects {
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-}
-
-.skill, .projlink, .resumelink {
-  border: 1px solid black;
-  border-radius: 50px;
-  padding: 5px 10px 5px 10px;
-  margin: 5px;
+/* nav */
+nav {
   display: inline-block;
-  flex-flow: row wrap;
-}
-
-.resumelink {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.projlink {
-  text-decoration: none;
-  color: black;
-}
-
-.projlink:hover, .resumelink:hover {
-  background-color: rgb(255, 230, 0);
-}
-
-.nav-link, .foot-link {
-  color: black;
-  text-decoration: none;
-  padding: 5px;
-  margin: 5px;
+  border-bottom: 1px solid black;
+  margin: 3px 0px 20px 0px;
+  padding: 10px;
 }
 
 .nav-link:hover {
@@ -95,32 +32,140 @@ img {
   text-decoration-color: rgb(255, 230, 0)
 }
 
-.foot-link:hover {
-  text-decoration-line: underline;
-  text-underline-offset: -26px;
-  text-decoration-thickness: 3px;
-}
-
 .active {
   text-decoration-line: underline;
   text-underline-offset: 12px;
   text-decoration-thickness: 3px;
 }
 
+ /* content */
 .about, .contact, .resume {
   max-width: 700px;
 }
 
-nav {
-  display: inline-block;
-  border-bottom: 1px solid black;
-  margin: 3px 0px 20px 0px;
-  padding: 10px;
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 0px 15px;
+}
+
+/* about */
+.abouttext {
+  max-width: 375px;
+  text-align: justify;
+}
+
+.headshot, .skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* portfolio */
+.projects {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.projthumb {
+  max-width: 600px;
+  height: auto;
+}
+
+.projlinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.projlink, .resumelink, .submit {
+  border: 1px solid black;
+}
+
+.projlink, .resumelink, .skill {
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+  flex-flow: row wrap;
+}
+
+.skill {
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.projlink, .resumelink {
+  text-decoration: none;
+  color: black;
+}
+
+.resumelink {
+  display: flex;
+  align-items: center;
+}
+
+.projlink:hover, .resumelink:hover, .submit:hover {
+  background-color: rgb(255, 230, 0);
+}
+
+/* resume */
+.resumelinkdiv {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.resumetext {
+  font-size: 20px;
+  margin: 5px
+}
+
+.nav-link, .foot-link {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.foot-link:hover {
+  text-decoration-line: underline;
+  text-underline-offset: -26px;
+  text-decoration-thickness: 3px;
+}
+
+
+.footer, .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footerlinks {
+  margin: auto;
+  width: 50%;
+  align-items: center;
 }
 
 footer {
   display: inline-block;
   border-top: 1px solid black;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 10px;
+  bottom: 0;
+  width: 100%
+}
+
+@media screen and (max-width: 625px) {
+  .projthumb, .headshot {
+    width: 300px;
+  }
 }
