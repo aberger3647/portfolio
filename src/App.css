@@ -45,6 +45,7 @@ nav {
  /* content */
 .about, .contact, .resume {
   max-width: 700px;
+  margin: 15px;
 }
 
 .content {
@@ -58,7 +59,7 @@ nav {
   text-align: justify;
 }
 
-.headshot, .skills {
+.headshotdiv, .skills {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -143,7 +144,6 @@ textarea {
 
 .resumetext {
   font-size: 20px;
-  font-weight: bold;
   margin: 5px
 }
 
