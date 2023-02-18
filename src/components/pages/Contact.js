@@ -34,6 +34,9 @@ const Contact = () => {
             <input type="text" id="email" name="email"></input>
             <label for="message"><h3>Message</h3></label>
             <textarea name="message"></textarea>
+            <div className="projlinks">
+                <a  className="projlink">Submit</a>
+           </div>
         </form>
     </div>
 
