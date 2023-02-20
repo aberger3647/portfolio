@@ -1,5 +1,6 @@
 import React from 'react';
 import Skill from '../Skill';
+import { RiDownloadLine } from 'react-icons/ri';
 
 const Resume = () => {
     const skills = ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Tailwind', 'Node.js', 'Express.js', 'SQL', 'MySQL', 'MongoDB', 'Mongoose', 'NoSQL', 'React']
@@ -11,7 +12,10 @@ const Resume = () => {
             {skills.map((skill) => <Skill skill={skill} />)}
         </div>
         <div className='resumelinkdiv'>
-            <a href='./img/AlexBergerResume2023.pdf' className='resumelink' target='_blank'><p className='resumetext'>Download Resume</p></a>
+            <a href='./img/AlexBergerResume2023.pdf' className='resumelink' target='_blank'>
+                <p className='resumetext'>Download Resume</p>
+                <RiDownloadLine className='icon' />
+            </a>
         </div>
     </div>
 )};
