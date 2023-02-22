@@ -1,5 +1,5 @@
 /* text and image display */
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, p, a, input, textarea {
   font-family: Space Grotesk;
 }
 
@@ -29,11 +29,11 @@ nav {
   padding: 10px;
 }
 
-.nav-link:hover {
-  text-decoration-line: underline;
-  text-underline-offset: 12px;
-  text-decoration-thickness: 3px;
-  text-decoration-color: rgb(255, 230, 0)
+.nav-link, .foot-link {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
 }
 
 .active {
@@ -41,6 +41,15 @@ nav {
   text-underline-offset: 12px;
   text-decoration-thickness: 3px;
 }
+
+
+.nav-link:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(255, 230, 0)
+}
+
 
  /* content */
 .about, .contact, .resume {
@@ -147,12 +156,6 @@ textarea {
   margin: 5px;
 }
 
-.nav-link, .foot-link {
-  color: black;
-  text-decoration: none;
-  padding: 5px;
-  margin: 5px;
-}
 
 .foot-link:hover {
   text-decoration-line: underline;

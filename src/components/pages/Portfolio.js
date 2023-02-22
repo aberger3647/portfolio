@@ -27,30 +27,30 @@ const Portfolio = () => {
             desc: 'A weather app that allows a user to input a city and view the current conditions along with a 5-day forecast. Tools used: OpenWeather API, Bootstrap',
             alt: 'Screenshot of Weather Dashboard app'
         },
-        // {
-        //     imgPath:
-        //     title:
-        //     github:
-        //     liveApp:
-        //     desc:
-        //     alt:
-        // },
-        // {
-        //     imgPath:
-        //     title:
-        //     github:
-        //     liveApp:
-        //     desc:
-        //     alt:
-        // },
-        // {
-        //     imgPath:
-        //     title:
-        //     github:
-        //     liveApp:
-        //     desc:
-        //     alt:
-        // }
+        {
+            imgPath: './img/booksearch.png',
+            title: 'Book Search Engine',
+            github: 'https://github.com/aberger3647/book-search-engine',
+            liveApp: 'https://murmuring-stream-95769.herokuapp.com/',
+            desc: 'Refactored a Google Books API search engine built with a RESTful API into a GraphQL API built with Apollo Server. Tools used: React, MongoDB, Node/Express',
+            alt: 'Screenshot of Book Search app'
+        },
+        {
+            imgPath: './img/employeetracker.png',
+            title: 'Employee Tracker',
+            github: 'https://github.com/aberger3647/employee-tracker',
+            liveApp:'#',
+            desc: 'A CLI using Node.js, Inquirer and MySQL that allows the user to view and manage the departments, roles, and employees in a company.',
+            alt: 'Screenshot of Employee Tracker'
+        },
+        {
+            imgPath: './img/readme.png',
+            title: 'Readme Generator',
+            github: 'https://github.com/aberger3647/readme-generator',
+            liveApp: '#',
+            desc: 'A generator using Node.js that takes user input to create a README.md.',
+            alt: 'Screenshot of Readme Generator'
+        }
     ]
 
     return (
