@@ -1,3 +1,19 @@
+:root {
+  --fs-xl: 3rem;
+  --fs-600:  1.5rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+}
+
+@media (min-width: 40em) {
+  :root {
+    --fs-xl: 3rem;
+    --fs-600:  2rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1.125rem;
+  }
+}
+
 /* text and image display */
 h1, h2, h3, h4, p, a, input, textarea {
   font-family: Space Grotesk;
@@ -8,11 +24,21 @@ h1, h2 {
   margin: 0px 15px 10px 15px; 
 }
 
+h1 {
+  font-size: var(--fs-xl);
+}
+
+h2 {
+  font-size: var(--fs-600);
+}
+
 h3 {
   margin: 15px 0px 5px 0px;
+  font-size: var(--fs-500);
 }
 
 p {
+  font-size: var(--fs-400);
   margin:15px;
 }
 
