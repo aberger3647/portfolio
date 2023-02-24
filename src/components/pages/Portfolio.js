@@ -57,7 +57,7 @@ const Portfolio = () => {
     <div className="portfolio">
         <h1>Portfolio</h1>
         <div className="projects">
-            {projects.map((project) => <Project imgPath={project.imgPath} title={project.title} github={project.github} liveApp={project.liveApp} desc={project.desc} alt={project.alt} />)}
+            {projects.map((project) => <Project key={project.title} imgPath={project.imgPath} title={project.title} github={project.github} liveApp={project.liveApp} desc={project.desc} alt={project.alt} />)}
         </div>
     </div>
 )};

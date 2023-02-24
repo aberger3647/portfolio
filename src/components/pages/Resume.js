@@ -9,7 +9,7 @@ const Resume = () => {
     <div className="resume">
         <h1>Proficiencies</h1>
         <div className="skills">
-            {skills.map((skill) => <Skill skill={skill} />)}
+            {skills.map((skill) => <Skill key={skill} skill={skill} />)}
         </div>
         <div className='resumelinkdiv'>
             <a href='./img/AlexBergerResume2023.pdf' className='resumelink' target='_blank'>

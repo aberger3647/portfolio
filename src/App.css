@@ -1,5 +1,5 @@
 :root {
-  --fs-xl: 3rem;
+  --fs-xl: 2rem;
   --fs-600:  1.5rem;
   --fs-500: 1.25rem;
   --fs-400: 1rem;
@@ -7,9 +7,9 @@
 
 @media (min-width: 40em) {
   :root {
-    --fs-xl: 3rem;
-    --fs-600:  2rem;
-    --fs-500: 1.5rem;
+    --fs-xl: 2rem;
+    --fs-600:  1.5rem;
+    --fs-500: 1.25rem;
     --fs-400: 1.125rem;
   }
 }
@@ -49,10 +49,20 @@ img {
 
 /* nav */
 nav {
-  display: inline-block;
-  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
   margin: 3px 0px 20px 0px;
   padding: 10px;
+  justify-content: center;
+}
+
+.navlinks {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+h2.myName {
+  margin: 0px
 }
 
 .nav-link, .foot-link {
@@ -80,6 +90,10 @@ nav {
  /* content */
 .about, .contact, .resume {
   max-width: 700px;
+  margin: 15px;
+}
+
+.portfolio {
   margin: 15px;
 }
 
@@ -170,6 +184,12 @@ textarea {
   min-height: 200px;
 }
 
+small {
+  color: rgb(241, 32, 0);
+  display: block;
+  visibility: hidden;
+}
+
 /* resume */
 .resumelinkdiv {
   display: flex;
@@ -182,24 +202,15 @@ textarea {
   margin: 5px;
 }
 
-
 .foot-link:hover {
   text-decoration-line: underline;
   text-underline-offset: -26px;
   text-decoration-thickness: 3px;
 }
 
-
-.footer, .nav {
+.footer {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-
-.footerlinks {
-  margin: auto;
-  width: 50%;
   align-items: center;
 }
 
@@ -218,5 +229,8 @@ footer {
   }
   textarea, input {
     width: 300px;
+  }
+  nav {
+    /* display: block; */
   }
 }
