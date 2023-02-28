@@ -7,7 +7,7 @@
 A single-page application built with React displaying my bio, resume and skills, and portfolio of projects.
 
 ## Deployed App
-[Link](link)
+[Link](https://aberger3647.github.io/portfolio/)
   
 ## Table of Contents
 - [Screenshot](#screenshot)
