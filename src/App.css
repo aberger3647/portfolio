@@ -221,7 +221,9 @@ footer {
 .footerlinks {
   border-top: 1px solid black;
   padding: 10px;
-  bottom: 0;
+  position: absolute;
+  bottom: 2%;
+
 }
 
 @media screen and (max-width: 625px) {
