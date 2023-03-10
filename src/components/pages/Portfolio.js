@@ -4,6 +4,14 @@ import Project from '../Project';
 const Portfolio = () => {
     const projects = [
         {
+            imgPath: './img/ghostbusters.png',
+            title: 'Ghostbusters',
+            github: 'https://github.com/aberger3647/cache-me-outside',
+            liveApp: 'https://agile-peak-65135.herokuapp.com/',
+            desc: 'A dating app that allows users to review dates. Contributed to visual design, front-end, and back-end code. Tools used: React, Express.js, Node.js, MongoDB, and Cloudinary.',
+            alt: 'Screenshot of Ghostbusters app'
+        },
+        {
             imgPath: './img/plantparenthood.png',
             title: 'Plant Parenthood',
             github: 'https://github.com/aberger3647/plantparenthood',
