@@ -107,8 +107,13 @@ h2.myName {
 
 /* about */
 .abouttext {
-  max-width: 375px;
-  text-align: justify;
+  max-width: 450px;
+  line-height: 1.75rem;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: space-around;
 }
 
 .headshotdiv, .skills {

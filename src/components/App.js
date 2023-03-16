@@ -10,7 +10,6 @@ const App = () => {
     <>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <Content currentPage={currentPage} />
-      <Footer />
     </>
   );
 };
