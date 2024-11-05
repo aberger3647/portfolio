@@ -4,7 +4,7 @@ import Project from '../Project';
 const Portfolio = () => {
     const projects = [
         {
-            imgPath: './img/ghostbusters.png',
+            imgPath: 'img/ghostbusters.png',
             title: 'Ghostbusters',
             github: 'https://github.com/aberger3647/cache-me-outside',
             liveApp: 'https://agile-peak-65135.herokuapp.com/',
@@ -12,7 +12,7 @@ const Portfolio = () => {
             alt: 'Screenshot of Ghostbusters app'
         },
         {
-            imgPath: './img/plantparenthood.png',
+            imgPath: 'img/plantparenthood.png',
             title: 'Plant Parenthood',
             github: 'https://github.com/aberger3647/plantparenthood',
             liveApp: 'https://plant-parenthood.herokuapp.com/',
@@ -20,7 +20,7 @@ const Portfolio = () => {
             alt: 'Screenshot of Plant Parenthood app'
         },
         {
-            imgPath:'./img/cinemate.png',
+            imgPath:'img/cinemate.png',
             title:'Cinemate',
             github: 'https://github.com/aberger3647/cinemate',
             liveApp: 'https://aberger3647.github.io/cinemate/',
@@ -28,7 +28,7 @@ const Portfolio = () => {
             alt: 'Screenshot of Cinemate app'
         },
         {
-            imgPath: './img/weather.png',
+            imgPath: 'img/weather.png',
             title: 'Weather Dashboard',
             github: 'https://github.com/aberger3647/weather-dashboard/',
             liveApp: 'https://aberger3647.github.io/weather-dashboard/',
@@ -36,7 +36,7 @@ const Portfolio = () => {
             alt: 'Screenshot of Weather Dashboard app'
         },
         {
-            imgPath: './img/booksearch.png',
+            imgPath: 'img/booksearch.png',
             title: 'Book Search Engine',
             github: 'https://github.com/aberger3647/book-search-engine',
             liveApp: 'https://murmuring-stream-95769.herokuapp.com/',
@@ -44,7 +44,7 @@ const Portfolio = () => {
             alt: 'Screenshot of Book Search app'
         },
         {
-            imgPath: './img/employeetracker.png',
+            imgPath: 'img/employeetracker.png',
             title: 'Employee Tracker',
             github: 'https://github.com/aberger3647/employee-tracker',
             liveApp:'#',
@@ -52,7 +52,7 @@ const Portfolio = () => {
             alt: 'Screenshot of Employee Tracker'
         },
         {
-            imgPath: './img/readme.png',
+            imgPath: 'img/readme.png',
             title: 'Readme Generator',
             github: 'https://github.com/aberger3647/readme-generator',
             liveApp: '#',
@@ -65,7 +65,7 @@ const Portfolio = () => {
     <div className="portfolio">
         <h1>Portfolio</h1>
         <div className="projects">
-            {projects.map((project) => <Project key={project.title} imgPath={project.imgPath} title={project.title} github={project.github} liveApp={project.liveApp} desc={project.desc} alt={project.alt} />)}
+            {projects.map((project) => <Project key={project.title} imgPath={`${process.env.PUBLIC_URL}/${project.imgPath}`} title={project.title} github={project.github} liveApp={project.liveApp} desc={project.desc} alt={project.alt} />)}
         </div>
     </div>
 )};

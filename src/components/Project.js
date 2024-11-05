@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Project = ({ imgPath, title, github, liveApp, desc }) => {
+const Project = ({ imgPath, title, github, liveApp, desc, alt }) => {
     return (
         <div className="project">
-           <img src={imgPath} className="projthumb" />
+           <img src={imgPath} className="projthumb" alt={alt} />
            <h2>{title}</h2>
            <p>{desc}</p>
            <div className="projlinks">

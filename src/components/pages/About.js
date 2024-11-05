@@ -12,7 +12,7 @@ export default function About() {
             <a href="https://alexjberger.com" target="_blank" rel="noopener noreferrer" className='nav-link'>Design</a>
         </div>
         <div className="headshotdiv">
-            <img src='./img/headshot.jpg' className='headshot' alt="Black and white headshot of Alex" />
+            <img src={`${process.env.PUBLIC_URL}/img/headshot.jpg`} className='headshot' alt="Black and white headshot of Alex" />
         </div>
     </div>
 
