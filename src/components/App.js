@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Header from "./Header.js";
 import Content from "./Content.js";
-import Footer from "./Footer.js";
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("Portfolio");
   const handlePageChange = (page) => setCurrentPage(page);
   return (
     <>

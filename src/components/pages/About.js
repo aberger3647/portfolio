@@ -9,7 +9,7 @@ export default function About() {
         <div className='contactLinks'>
         <a href="https://github.com/aberger3647" target="_blank" rel="noopener noreferrer" className='nav-link'>GitHub</a>
             <a href="https://www.linkedin.com/in/alexjberger/" target="_blank" rel="noopener noreferrer" className='nav-link'>LinkedIn</a>
-            <a href="https://alexjberger.com" target="_blank" rel="noopener noreferrer" className='nav-link'>Design</a>
+            <a href="https://bergerdesign.netlify.app" target="_blank" rel="noopener noreferrer" className='nav-link'>Design</a>
         </div>
         <div className="headshotdiv">
             <img src={`${process.env.PUBLIC_URL}/img/headshot.jpg`} className='headshot' alt="Black and white headshot of Alex" />

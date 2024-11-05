@@ -1,22 +1,7 @@
-import React from 'react';
-import Skill from '../Skill';
-import { RiDownloadLine } from 'react-icons/ri';
-
 const Resume = () => {
-    const skills = ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Tailwind', 'Node.js', 'Express.js', 'SQL', 'MySQL', 'MongoDB', 'Mongoose', 'NoSQL', 'React']
-
     return (
     <div className="resume">
-        <h1>Proficiencies</h1>
-        <div className="skills">
-            {skills.map((skill) => <Skill key={skill} skill={skill} />)}
-        </div>
-        <div className='resumelinkdiv'>
-            <a href='./img/AlexBergerResume2023.pdf' className='resumelink' target='_blank'>
-                <p className='resumetext'>Download Resume</p>
-                <RiDownloadLine className='icon' />
-            </a>
-        </div>
+   <iframe title='AlexBergerResume' src="https://docs.google.com/document/d/e/2PACX-1vTV3Pov5BUR2oBlpLpM4hi7nbQiZATfwMM6I6D5eU-hzX56a3c2fS7O0LoKRXqnzOUza5_o23JPmWgT/pub?embedded=true" frameborder='0'></iframe>
     </div>
 )};
 

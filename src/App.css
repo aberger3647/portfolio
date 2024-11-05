@@ -91,7 +91,7 @@ h2.myName {
 }
 
  /* content */
-.about, .contact, .resume {
+.about, .contact {
   max-width: 700px;
   margin: 15px;
 }
@@ -152,11 +152,11 @@ h2.myName {
   justify-content: space-around;
 }
 
-.projlink, .resumelink, .submit, textarea, input {
+.projlink, .submit, textarea, input {
   border: 1px solid black;
 }
 
-.projlink, .resumelink, .skill {
+.projlink,.skill {
   border-radius: 50px;
   padding: 5px 10px 5px 10px;
   margin: 5px;
@@ -167,17 +167,13 @@ h2.myName {
   border: 1px solid rgb(211, 211, 211);
 }
 
-.projlink, .resumelink {
+.projlink {
   text-decoration: none;
   color: black;
 }
 
-.resumelink {
-  display: flex;
-  align-items: center;
-}
 
-.projlink:hover, .resumelink:hover, .submit:hover {
+.projlink:hover, .submit:hover {
   background-color: rgb(255, 230, 0);
 }
 
@@ -198,36 +194,14 @@ small {
   visibility: hidden;
 }
 
-/* resume */
-.resumelinkdiv {
-  display: flex;
-  justify-content: center;
-  margin: 15px;
+.resume {
+  width: 1000px;
+  height: 1300px;
 }
 
-.resumetext {
-  font-size: 20px;
-  margin: 5px;
-}
-
-.foot-link:hover {
-  text-decoration-line: underline;
-  text-underline-offset: -26px;
-  text-decoration-thickness: 3px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footerlinks {
-  border-top: 1px solid black;
-  padding: 10px;
-  position: absolute;
-  bottom: 2%;
-
+iframe {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 625px) {

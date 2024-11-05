@@ -11,17 +11,13 @@ export default function Content({ currentPage }) {
         switch (currentPage) {
             case 'About':
                 return <About />;
-                break;
             case 'Contact':
                 return <Contact />;
-                break;
-            case 'Portfolio':
-                return <Portfolio />;
-                break;
             case 'Resume':
                 return <Resume />;
-                break;
-        }
+            default:
+                return <Portfolio />;
+                }
     };
 
 
